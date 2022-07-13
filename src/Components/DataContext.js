@@ -8,7 +8,7 @@ export function DataProvider({ children }) {
   const [dataError, setDataError] = useState(false);
   function fetchData(location) {
     setDataError(false);
-    fetch(`http://192.168.0.26:4000/${location}`, {
+    fetch(`http://air-pollution.ddns.net:4000/${location}`, {
       method: "GET",
       mode: "cors",
     })
